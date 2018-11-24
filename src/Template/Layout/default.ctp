@@ -14,14 +14,15 @@
   <?= $this->fetch('meta') ?>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" />
   <?= $this->fetch('css') ?>
   <?= $this->fetch('script') ?>
 </head>
 <body role="document">
   <?=$this->element('Common/menu')?>
   <div class="container clearfix" role="main">
-    <h1><a href=""><?= $this->fetch('title') ?></a></h1>
+    <h1><i class="fa fa-poo"></i><a href=""><?= $this->fetch('title') ?></a></h1>
     <?= $this->Flash->render() ?>
     <?= $this->fetch('content') ?>
   </div>
